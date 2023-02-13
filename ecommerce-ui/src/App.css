@@ -3,6 +3,11 @@ h1 {
     color: blueviolet
 }
 
+h2 {
+    text-align: left;
+    color: rgb(226, 43, 141)
+}
+
 .button {
     background-color: #4CAF50;
     border: none;

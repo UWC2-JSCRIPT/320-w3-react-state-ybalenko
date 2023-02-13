@@ -5,7 +5,7 @@ import bnbs from './bnbs.json';
 function RenderBnbs({ addItem }) {
 
     const rentals = bnbs.map((rental, idx) => {
-        return <div className='' key={idx}>
+        return <div className='rental-items' key={idx}>
             <h4>{rental.title}</h4>
             <img className='rental-img' src={rental.image} alt={rental.title} />
             <span className='grid-item'> Location: {rental.location.city}</span>
