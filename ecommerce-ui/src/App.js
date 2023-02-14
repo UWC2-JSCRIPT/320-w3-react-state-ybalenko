@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 import RenderBnbs from './Rentals';
 import Cart from './Cart.jsx'
 
 
-function App() {
+function App(props) {
     const [cartRentalItem, addCartRentalItem] = useState([]);
     const addRentalToCart = (event) => {
         const newItem = {
@@ -39,6 +40,12 @@ function App() {
                 removeItem={removeFromCart} />
         </div>
     );
+}
+
+App.propTypes = {
+    addRentalToCart: PropTypes.array,
+    cartRentalItem: PropTypes.array,
+    removeFromCart: PropTypes.array
 }
 
 export default App;
