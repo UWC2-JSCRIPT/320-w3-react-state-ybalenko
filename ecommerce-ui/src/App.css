@@ -1,0 +1,44 @@
+h1 {
+    text-align: left;
+    color: blueviolet
+}
+
+h2 {
+    text-align: left;
+    color: rgb(226, 43, 141)
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+.rental-img {
+    width: 45%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-item {
+    display: table-row-group;
+    width: fit-content;
+    justify-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
